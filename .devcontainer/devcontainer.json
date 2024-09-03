@@ -1,0 +1,14 @@
+{
+    "name": "Python Calculator Dev Container",
+    "dockerFile": "Dockerfile",
+    "appPort": 8888,
+    "extensions": [
+        "ms-python.python"
+    ],
+    "settings": {
+        "python.pythonPath": "/usr/local/bin/python",
+        "python.defaultInterpreterPath": "/usr/local/bin/python"
+    },
+    "forwardPorts": [8888],
+    "postCreateCommand": "pip install -r requirements.txt"
+}
